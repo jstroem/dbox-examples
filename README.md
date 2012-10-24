@@ -21,4 +21,6 @@ The project is written using bootstrap and express.
 
 ### Run
 
-	node app.js
+	npm start
+	
+afterwards go to http://localhost:3000
