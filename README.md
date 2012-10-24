@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a repo collecting examples for the sintaxi/node-dbox library.
+This is a repo collecting examples for the [sintaxi/node-dbox] library.
 
 Currently the following examples are available:
 	overview
@@ -23,4 +23,4 @@ The project is written using bootstrap and express.
 
 	npm start
 	
-afterwards go to http://localhost:3000
+afterwards go to [http://localhost:3000]
