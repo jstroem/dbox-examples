@@ -22,7 +22,7 @@ app.configure(function(){
   app.use(express.cookieParser('d9nEPGiAeSwGFUN2Ra8CGBmq'));
   app.use(express.session());
   app.use(app.router);
-  app.use(require('less-middleware')({ src: __dirname + '/public' }));
+  app.use(require('less-middleware')(path.join(__dirname, '/public')));
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
