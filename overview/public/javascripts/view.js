@@ -49,8 +49,11 @@ $(function(){
 
 	resultTable.delegate('tr','click',function(e){
 		var $this = $(this);
-		if ($this.data('is_dir') && $this.next().data('lvl') == $this.data('lvl')){
-			metadata( $this.data('path') );
+
+		if ($this.data('is_dir')){
+			if (typeof $this.next().data('lvl') == 'undefined' || $this.next().data('lvl') <= $this.data('lvl')){
+				metadata( $this.data('path') );
+			}
 		} else {
 			//Need to write some more
 		}
